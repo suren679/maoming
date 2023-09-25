@@ -1,0 +1,12 @@
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* 设置容器高度为视口高度，以填满整个屏幕 */
+  }
+  
+  video {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  

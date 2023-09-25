@@ -1,0 +1,226 @@
+/* style.css */
+#header {
+  /* ... existing styles ... */
+  border-top: 80px solid #f79fce;
+  border-bottom: 2px solid #fefcfc; /* Add a border to the bottom of the header */
+}
+
+#header .center {
+  /* ... existing styles ... */
+  border-top: 2px solid #000; /* Add a border to the top of the navigation area */
+}
+/* style.css */
+.footer {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px 0;
+  position: relative;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px; /* Negative value to create the border below the footer */
+  width: 100%;
+  border-bottom: 100px solid #9cb0fdf9; /* Bottom border */
+  z-index: -1;
+}
+
+.footer p {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+#header .link {
+  /* ... existing styles ... */
+  border-left: 2px solid #000; /* Add a border to the left of the navigation area */
+  border-right: 2px solid #000; /* Add a border to the right of the navigation area */
+  margin: 0; /* Remove the default margin */
+  padding: 0; /* Remove the default padding */
+  display: flex; /* Use flexbox to center the navigation links */
+  justify-content: space-between; /* Distribute space between navigation links */
+}
+
+#header .link li{
+	width:120px;
+	height: 70px;
+	background-color: #333;
+	text-align: center;
+	line-height: 70px;
+	color:#eee;
+	float: left;
+}
+#header .link a{
+	display: block;
+	text-decoration:none;
+	color:#eee;
+	width:100%;
+	height:100%;
+	transition:all 0.3s;
+	-webkit-transition:all 0.3s;
+}
+
+
+ /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    padding: 10px; /* Add padding to the items */
+   
+  }
+  
+  .item:last-child {
+    margin-right: 0;
+  }
+  
+  .image-container {
+    margin-right: 10px;
+    float: left; /* Float the image to the left */
+  }
+  
+  .image-container img {
+    max-width: 350px; /* Set the maximum width for the images */
+    max-height: 300px; /* Set the maximum height for the images */
+  }
+  
+  .text-container {
+    flex: 2;
+  }
+  /* style.css */
+.text-container a {
+  text-decoration: none; /* Remove underline from linked text */
+}
+  
+  .text-container p {
+    text-align: left; /* Align the text to the left */
+    line-height: 2.0;
+  }
+  
+  .line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .line img {
+    float: left; /* Float the image to the left */
+    margin-right: 10px;
+  }
+  
+  .list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .list img {
+    float: left; /* Float the image to the left */
+    margin-right: 10px;
+  }
+  
+  .list p {
+    text-align: left; /* Align the text to the left */
+    line-height: 2.0;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  /* Add some basic styling */
+.line {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+  
+  .line p {
+    margin: 0;
+  }
+  
+  .line b {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .line span {
+    display: block;
+  }
+  
+  /* Style the link */
+  .line a {
+    color: #007bff;
+    text-decoration: none; /* Remove the underline */
+  }
+  
+  .line a:hover {
+    text-decoration: none; /* Remove the underline on hover */
+  }
+  
+  /* Center the image */
+  .line img {
+    display: block;
+    margin: 0 auto;
+    max-width: 95%;
+  }
+  
+/* Style for the container of the lists */
+.list-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+  }
+/* style.css */
+.list-container .list a {
+  text-decoration: none; /* Remove underline from linked text */
+}
+
+  
+/* Style for the container of the lists */
+.list-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+  }
+ 
+  /* Style for each list item */
+  .list {
+    display: flex; /* Add this to ensure images and text are displayed in a row */
+    flex-direction: column;
+    align-items: flex-start;
+    width: 240px;
+    text-align: center;
+    margin-right: 50px;
+  }
+  
+  /* Style for the images */
+  .list img {
+    width: 220px;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  /* Style for the text */
+  .list p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
